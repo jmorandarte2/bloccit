@@ -30,7 +30,7 @@ describe("routes : static", () => {
     it("should return a string polo", () => {
 
       request.get(marco, (err, res, body) => {
-        expect(res.statusCode).toBe('polo');
+        expect(body).toContain('polo');
         done();
       });
     }); 
